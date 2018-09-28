@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I tre porcellini
-categories: it
+language: it
 permalink: /it/i-tre-porcellini
 ---
 
