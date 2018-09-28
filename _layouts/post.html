@@ -13,15 +13,19 @@ layout: default
 <div id="post">
   {{ content }}
 </div>
-lang: {{ page.language }}
 
 <hr>
 <div id="related">
-  <h3>More tales</h3>
+  {% if page.language == "it" %}
+    <h3>Altre favole</h3>
+  {% elsif page.language == "en" %}
+    <h3>More tales</h3>
+  {% endif %}
+  
   <ul class="posts">
   {% for post in site.posts %}
-    {% if post.title != page.title and post.categories[0] == page.categories[0] %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.language }}-</li>
+    {% if post.title != page.title and post.language == page.language %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}
   {% endfor %}
   </ul>
