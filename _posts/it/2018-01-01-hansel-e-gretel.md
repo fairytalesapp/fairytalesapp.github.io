@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hansel e Gretel
-categories: it
+language: it
 permalink: /it/hansel-e-gretel
 ---
 
